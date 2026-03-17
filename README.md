@@ -1,8 +1,10 @@
-# openclaw-marketing-skills
+<h1 align="center"><b>openclaw-marketing-skills</b></h1>
 
-[![Powered by MyClaw.ai](https://img.shields.io/badge/Powered%20by-MyClaw.ai-blue?style=flat-square)](https://myclaw.ai)
+<p align="center">
+<a href="https://myclaw.ai"><img src="https://img.shields.io/badge/Powered%20by-MyClaw.ai-blue?style=flat-square" alt="Powered by MyClaw.ai"></a>
+</p>
 
-> 33 battle-tested marketing skills for OpenClaw agents. CRO, copywriting, SEO, paid ads, email, growth, and more — ready to install and use.
+<p align="center">33 battle-tested marketing skills for OpenClaw agents. CRO, copywriting, SEO, paid ads, email, growth, and more — ready to install and use.</p>
 
 [English](README.md) | [中文](README.zh-CN.md) | [日本語](README.ja.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Italiano](README.it.md) | [Русский](README.ru.md)
 
@@ -129,14 +131,6 @@ Help me with Google Ads
 - **marketing-ideas** — 139 proven SaaS marketing ideas
 - **marketing-psychology** — Psychology models for marketing
 - **lead-magnets** — Lead magnet creation and optimization
-
----
-
-## Credits
-
-Adapted from [marketingskills](https://github.com/PlatoTheOne/marketingskills) by Corey Haines, converted to the OpenClaw AgentSkills format.
-
-Original: MIT License. This port: MIT License.
 
 ---
 
