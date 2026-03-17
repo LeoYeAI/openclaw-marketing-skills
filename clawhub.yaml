@@ -1,0 +1,51 @@
+name: openclaw-marketing-skills
+version: 1.0.0
+description: "33 battle-tested marketing skills for OpenClaw agents — Powered by MyClaw.ai"
+homepage: https://myclaw.ai
+author: MyClaw-AI
+license: MIT
+topics:
+  - myclaw
+  - openclaw
+  - marketing
+  - cro
+  - copywriting
+  - seo
+  - growth
+  - saas-marketing
+  - paid-ads
+  - email-marketing
+skills:
+  - skills/product-marketing-context
+  - skills/page-cro
+  - skills/signup-flow-cro
+  - skills/onboarding-cro
+  - skills/form-cro
+  - skills/popup-cro
+  - skills/paywall-upgrade-cro
+  - skills/copywriting
+  - skills/copy-editing
+  - skills/cold-email
+  - skills/email-sequence
+  - skills/social-content
+  - skills/seo-audit
+  - skills/ai-seo
+  - skills/programmatic-seo
+  - skills/site-architecture
+  - skills/schema-markup
+  - skills/content-strategy
+  - skills/paid-ads
+  - skills/ad-creative
+  - skills/ab-test-setup
+  - skills/analytics-tracking
+  - skills/referral-program
+  - skills/free-tool-strategy
+  - skills/churn-prevention
+  - skills/revops
+  - skills/sales-enablement
+  - skills/launch-strategy
+  - skills/pricing-strategy
+  - skills/competitor-alternatives
+  - skills/marketing-ideas
+  - skills/marketing-psychology
+  - skills/lead-magnets
