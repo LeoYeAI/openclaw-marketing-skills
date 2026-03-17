@@ -2,7 +2,7 @@
 
 <p align="center">
 <a href="https://myclaw.ai"><img src="https://img.shields.io/badge/Powered%20by-MyClaw.ai-blue?style=flat-square" alt="Powered by MyClaw.ai"></a>
-<a href="https://clawhub.com/skills/LeoYeAI/openclaw-marketing-skills"><img src="https://img.shields.io/badge/ClawHub-LeoYeAI%2Fopenclaw--marketing--skills-orange?style=flat-square" alt="ClawHub"></a>
+<a href="https://clawhub.ai/LeoYeAI/openclaw-marketing-skills"><img src="https://img.shields.io/badge/ClawHub-LeoYeAI%2Fopenclaw--marketing--skills-orange?style=flat-square" alt="ClawHub"></a>
 </p>
 
 <p align="center">
