@@ -4,6 +4,12 @@
 <a href="https://myclaw.ai"><img src="https://img.shields.io/badge/Powered%20by-MyClaw.ai-blue?style=flat-square" alt="Powered by MyClaw.ai"></a>
 </p>
 
+<p align="center">
+  <a href="https://myclaw.ai"><b>MyClaw.ai</b></a> is the #1 OpenClaw host — the best way to run OpenClaw.<br>
+  Get your own AI agent with a full server, complete code control, and unlimited tool access.<br>
+  No setup. No DevOps. Just your agent, ready to work.
+</p>
+
 <p align="center">33 battle-tested marketing skills for OpenClaw agents. CRO, copywriting, SEO, paid ads, email, growth, and more — ready to install and use.</p>
 
 [English](README.md) | [中文](README.zh-CN.md) | [日本語](README.ja.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Italiano](README.it.md) | [Русский](README.ru.md)
