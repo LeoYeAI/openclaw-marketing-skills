@@ -1,4 +1,4 @@
-<h1 align="center"><b>openclaw-marketing-skills</b></h1>
+<h1 align="center"><b>📣 OpenClaw Marketing Skills</b></h1>
 
 <p align="center">
 <a href="https://myclaw.ai"><img src="https://img.shields.io/badge/Powered%20by-MyClaw.ai-blue?style=flat-square" alt="Powered by MyClaw.ai"></a>
