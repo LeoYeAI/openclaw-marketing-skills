@@ -36,5 +36,23 @@ Just ask naturally:
 - "Create a 5-email welcome sequence" → email-sequence
 - "Help me with Google Ads" → paid-ads
 
+## Optional X/Twitter Execution
+
+When `social-content`, `paid-ads`, `launch-strategy`, or `competitor-alternatives` need live X/Twitter data or approval-gated actions, install TweetClaw:
+
+```bash
+openclaw plugins install @xquik/tweetclaw
+```
+
+Use TweetClaw for tweet search, reply search, follower export, user lookup, monitors, webhooks, giveaway draws, and approval-gated posts or replies.
+
+Links:
+
+- GitHub: https://github.com/Xquik-dev/tweetclaw
+- npm: https://www.npmjs.com/package/@xquik/tweetclaw
+- ClawHub: https://clawhub.ai/kriptoburak/xquik-tweetclaw
+
+Keep credentials in local OpenClaw config or environment variables, not prompts or examples.
+
 Adapted from [marketingskills](https://github.com/PlatoTheOne/marketingskills) by Corey Haines.
 Powered by [MyClaw.ai](https://myclaw.ai).
