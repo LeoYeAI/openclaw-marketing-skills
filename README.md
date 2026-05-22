@@ -278,10 +278,6 @@ Every skill in this collection follows the same principles:
 
 ## Credits
 
-Adapted from [marketingskills](https://github.com/PlatoTheOne/marketingskills) by Corey Haines.
-
-Data connector skills inspired by [Toprank](https://github.com/nowork-studio/toprank) by nowork-studio.
-
 Powered by [MyClaw.ai](https://myclaw.ai) — the AI personal assistant platform that gives every user a full server with complete code control.
 
 ---
