@@ -2,15 +2,15 @@
 
 [![Powered by MyClaw.ai](https://img.shields.io/badge/Powered%20by-MyClaw.ai-blue?style=flat-square)](https://myclaw.ai)
 
-> 33 bewährte Marketing-Skills für OpenClaw-Agenten. CRO, Copywriting, SEO, bezahlte Werbung, E-Mail, Wachstum und mehr — einsatzbereit.
+> 37 bewährte Marketing-Skills für OpenClaw-Agenten. CRO, Copywriting, SEO, bezahlte Werbung, E-Mail, Wachstum, Daten-Connectoren und mehr — einsatzbereit.
 
-[English](README.md) | [中文](README.zh-CN.md) | [日本語](README.ja.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Italiano](README.it.md) | [Русский](README.ru.md)
+[English](README.md) | [中文](README.zh-CN.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Русский](README.ru.md)
 
 ---
 
 ## Inhalt
 
-33 Skills für alle wichtigen Marketing-Disziplinen:
+37 Skills für alle wichtigen Marketing-Disziplinen:
 
 | Kategorie | Skills |
 |-----------|--------|
@@ -19,6 +19,7 @@
 | **Text & Inhalt** | copywriting, copy-editing, cold-email, email-sequence, social-content |
 | **SEO** | seo-audit, ai-seo, programmatic-seo, site-architecture, schema-markup, content-strategy |
 | **Werbung & Analyse** | paid-ads, ad-creative, ab-test-setup, analytics-tracking |
+| **Daten-Connectoren** | google-ads-connect, search-console-connect, meta-ads-connect, x-twitter-connect |
 | **Wachstum & Retention** | referral-program, free-tool-strategy, churn-prevention |
 | **Vertrieb & GTM** | revops, sales-enablement, launch-strategy, pricing-strategy, competitor-alternatives |
 | **Strategie** | marketing-ideas, marketing-psychology, lead-magnets |
@@ -28,7 +29,7 @@
 ## Installation
 
 ```bash
-clawhub install MyClaw-AI/openclaw-marketing-skills
+clawhub install LeoYeAI/openclaw-marketing-skills
 ```
 
 ---
