@@ -1,6 +1,6 @@
 name: openclaw-marketing-skills
 version: 1.0.0
-description: "33 battle-tested marketing skills for OpenClaw agents — Powered by MyClaw.ai"
+description: "37 battle-tested marketing skills for OpenClaw agents - Powered by MyClaw.ai"
 homepage: https://myclaw.ai
 author: MyClaw-AI
 license: MIT
@@ -15,6 +15,9 @@ topics:
   - saas-marketing
   - paid-ads
   - email-marketing
+  - twitter
+  - x-twitter
+  - social-listening
 skills:
   - skills/product-marketing-context
   - skills/page-cro
@@ -38,6 +41,10 @@ skills:
   - skills/ad-creative
   - skills/ab-test-setup
   - skills/analytics-tracking
+  - skills/google-ads-connect
+  - skills/search-console-connect
+  - skills/meta-ads-connect
+  - skills/x-twitter-connect
   - skills/referral-program
   - skills/free-tool-strategy
   - skills/churn-prevention

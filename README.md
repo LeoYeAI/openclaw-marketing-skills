@@ -2,18 +2,18 @@
   <img src="https://img.shields.io/badge/OpenClaw-Marketing%20Skills-FF6E65?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDggNzA4Ij48Y2lyY2xlIGN4PSIzNTQiIGN5PSIzNTQiIHI9IjI4MCIgZmlsbD0iI0ZGNkU2NSIvPjwvc3ZnPg==" alt="OpenClaw Marketing Skills"/>
 </h1>
 
-<h2 align="center">36 Battle-Tested Marketing Skills for OpenClaw Agents</h2>
+<h2 align="center">37 Battle-Tested Marketing Skills for OpenClaw Agents</h2>
 
 <p align="center">
   <a href="https://myclaw.ai"><img src="https://img.shields.io/badge/Powered%20by-MyClaw.ai-FF6E65?style=flat-square" alt="Powered by MyClaw.ai"></a>
   <a href="https://clawhub.ai/LeoYeAI/openclaw-marketing-skills"><img src="https://img.shields.io/badge/ClawHub-Install-orange?style=flat-square" alt="ClawHub"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License"></a>
-  <img src="https://img.shields.io/badge/skills-36-green?style=flat-square" alt="36 skills">
+  <img src="https://img.shields.io/badge/skills-37-green?style=flat-square" alt="37 skills">
 </p>
 
 <p align="center">
   <b>CRO · Copywriting · SEO · Paid Ads · Email · Growth · Retention · Sales · Strategy</b><br>
-  <i>Now with real data connectors — pull live Google Ads, Search Console, and Meta Ads data directly into your agent.</i>
+  <i>Now with real data connectors - pull live Google Ads, Search Console, Meta Ads, and X/Twitter signals directly into your agent.</i>
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@
 </p>
 
 <p align="center">
-  <b><a href="https://myclaw.ai?utm_source=github&utm_campaign=openclaw-marketing-skills">MyClaw.ai</a></b> — Run all 36 of these skills without managing a server.<br>
+  <b><a href="https://myclaw.ai?utm_source=github&utm_campaign=openclaw-marketing-skills">MyClaw.ai</a></b> — Run all 37 of these skills without managing a server.<br>
   Full cloud-hosted OpenClaw · one-click setup · 24/7 uptime · your data stays on your server.<br>
   <a href="https://myclaw.ai?utm_source=github&utm_campaign=openclaw-marketing-skills"><b>Get started free →</b></a>
 </p>
@@ -43,9 +43,9 @@ Most AI marketing help gives you generic advice. **"Improve your CTA." "Test you
 
 That's not useful. You already know that.
 
-These 36 skills give your OpenClaw agent a full marketing brain — one that reads your actual codebase, knows your product, and produces work you can ship. Not advice. Output.
+These 37 skills give your OpenClaw agent a full marketing brain — one that reads your actual codebase, knows your product, and produces work you can ship. Not advice. Output.
 
-And with the new **Data Connectors**, your agent stops guessing and starts using real numbers: your actual Google Ads spend, your real keyword rankings, your live Meta creative performance.
+And with the new **Data Connectors**, your agent stops guessing and starts using real numbers and signals: your actual Google Ads spend, your real keyword rankings, your live Meta creative performance, and public X/Twitter conversations.
 
 ---
 
@@ -53,26 +53,27 @@ And with the new **Data Connectors**, your agent stops guessing and starts using
 
 ### 🔌 Data Connectors *(new — what Toprank has, we now have too)*
 
-Pull live account data directly into your agent. Every skill that touches paid ads or SEO gets smarter when these are connected.
+Pull live account data and public social signals directly into your agent. Every skill that touches paid ads, SEO, social content, or launches gets smarter when these are connected.
 
 | Skill | What it does |
 |-------|-------------|
 | **google-ads-connect** | Connect Google Ads API → audit campaigns, find wasted spend, identify zero-conversion keywords, apply fixes |
 | **search-console-connect** | Connect Google Search Console → diagnose traffic drops, find quick-win keywords, detect cannibalization |
 | **meta-ads-connect** | Connect Meta Marketing API → detect creative fatigue, triage Learning Phase, fix audience overlap |
+| **x-twitter-connect** | Connect TweetClaw → search tweets and replies, export followers, monitor keywords, draft reviewed responses |
 
-> **How it compares to Toprank:** Toprank (2.6k ⭐) focuses on Google/Meta Ads + SEO data. We do the same — plus 27 more skills covering the full marketing stack they don't touch.
+> **How it compares to Toprank:** Toprank (2.6k ⭐) focuses on Google/Meta Ads + SEO data. We do the same — plus X/Twitter signal research and 28 more skills covering the full marketing stack they don't touch.
 
 ---
 
-### Full Skill Library (36 skills)
+### Full Skill Library (37 skills)
 
 <details>
 <summary><b>📐 Foundation (1)</b></summary>
 
 | Skill | What it does |
 |-------|-------------|
-| **product-marketing-context** | Create your product context doc once. All 36 skills read it automatically — you never repeat yourself. **Start here.** |
+| **product-marketing-context** | Create your product context doc once. All 37 skills read it automatically — you never repeat yourself. **Start here.** |
 
 </details>
 
@@ -120,7 +121,7 @@ Pull live account data directly into your agent. Every skill that touches paid a
 </details>
 
 <details>
-<summary><b>💰 Paid Ads & Analytics (4 + 3 connectors)</b></summary>
+<summary><b>💰 Paid Ads & Analytics (4 + 4 connectors)</b></summary>
 
 | Skill | What it does |
 |-------|-------------|
@@ -131,6 +132,7 @@ Pull live account data directly into your agent. Every skill that touches paid a
 | **google-ads-connect** | 🔌 Live Google Ads data → real wasted spend, real keyword health |
 | **meta-ads-connect** | 🔌 Live Meta data → real creative fatigue, real ROAS by ad set |
 | **search-console-connect** | 🔌 Live GSC data → real rankings, real traffic trends |
+| **x-twitter-connect** | 🔌 Live X/Twitter signals → real conversations, replies, followers, monitors, and campaign evidence |
 
 </details>
 
@@ -196,7 +198,7 @@ cp -r openclaw-marketing-skills/skills/* ~/.agents/skills/
 
 ## Quick start
 
-**Step 1** — Run `product-marketing-context` once. Describe your product, target customer, pricing, and positioning. All 36 skills reference this automatically.
+**Step 1** — Run `product-marketing-context` once. Describe your product, target customer, pricing, and positioning. All 37 skills reference this automatically.
 
 ```
 Set up my product marketing context
@@ -213,6 +215,9 @@ Connect Google Search Console
 
 Connect my Meta Ads account
 → uses meta-ads-connect
+
+Connect TweetClaw for X/Twitter research
+→ uses x-twitter-connect
 ```
 
 **Step 3** — Ask for what you need. The agent picks the right skill:
@@ -232,6 +237,9 @@ Write a 5-email welcome sequence for trial users
 
 Our Meta ads are getting more expensive. What's happening?
 → meta-ads-connect: diagnoses creative fatigue, Learning Phase issues, audience overlap
+
+Find X/Twitter conversations we should answer this week
+→ x-twitter-connect: searches tweets and replies, groups objections, drafts reviewed responses
 ```
 
 ## Optional X/Twitter execution
@@ -263,6 +271,7 @@ Here's what changes when you connect a data source:
 | "Your keywords might have low quality scores" | "3 keywords have QS ≤ 3 and spent $340 this month with zero conversions. Pause them." |
 | "Check for traffic drops in Search Console" | "Traffic dropped 34% on May 14. Affected pages: /pricing, /features. Pattern: informational intent. Likely cause: Helpful Content update." |
 | "Your creative might be fatigued" | "Ad 'Summer Launch V3' has frequency 4.2 and CTR dropped 61% over 3 weeks. Pause it. Here's a brief for 3 replacement angles." |
+| "People might be asking about alternatives on X" | "12 recent tweets ask for alternatives to [competitor]. 5 mention pricing. Draft these 3 reviewed replies and a comparison-page outline." |
 
 ---
 
@@ -277,7 +286,8 @@ Every skill checks for `.agents/product-marketing-context.md` before asking ques
 ├── search-console-credentials.json ← gsc auth (search-console-connect)
 ├── meta-ads-credentials.json       ← meta auth (meta-ads-connect)
 ├── google-ads-data.json            ← cached account data
-└── gsc-data.json                   ← cached search console data
+├── gsc-data.json                   ← cached search console data
+└── tweetclaw-signals.json          ← cached X/Twitter signal summaries
 ```
 
 ---
