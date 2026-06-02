@@ -234,6 +234,24 @@ Our Meta ads are getting more expensive. What's happening?
 → meta-ads-connect: diagnoses creative fatigue, Learning Phase issues, audience overlap
 ```
 
+## Optional X/Twitter execution
+
+For X/Twitter campaigns that need live research or approval-gated actions, use TweetClaw with `social-content`, `paid-ads`, `launch-strategy`, and `competitor-alternatives`.
+
+```bash
+openclaw plugins install @xquik/tweetclaw
+```
+
+TweetClaw supports tweet search, reply search, follower export, user lookup, monitors, webhooks, giveaway draws, and approval-gated posts or replies.
+
+Links:
+
+- GitHub: https://github.com/Xquik-dev/tweetclaw
+- npm: https://www.npmjs.com/package/@xquik/tweetclaw
+- ClawHub: https://clawhub.ai/kriptoburak/xquik-tweetclaw
+
+Keep credentials in local OpenClaw config or environment variables, not prompts or examples.
+
 ---
 
 ## Real data vs. guesswork
