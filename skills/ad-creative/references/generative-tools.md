@@ -128,6 +128,56 @@ Specialized in typography and text rendering within images.
 
 ## Video Generation
 
+### MiniMax-H3
+
+MiniMax-H3 creates 2K videos with native audio from a required text prompt. Use it for 4-15 second ad concepts when you want a single asynchronous workflow for video and audio output.
+
+**Best for:** Short 2K ad concepts with native audio and flexible aspect ratios
+**API:** Bearer-authenticated v2 task API
+**Pricing:** USD 0.13/output second on the global endpoint; CNY 0.80/output second on the China endpoint
+
+**Endpoints:**
+- Global: `https://api.minimax.io/v2/video_generation`
+- China: `https://api.minimaxi.com/v2/video_generation`
+
+**Text-to-video requirements:**
+- `model`, `content`, `resolution`, and `duration` are required
+- `content` must include a non-empty `text` item of up to 7,000 characters
+- Use `resolution: "2K"` and an integer `duration` from 4 through 15 seconds
+- Text-only requests require a concrete `ratio`: `21:9`, `16:9`, `4:3`, `1:1`, `3:4`, or `9:16`
+- `callback_url` is optional; China requests may also set `aigc_watermark`
+
+**Create and query workflow:**
+```bash
+# Use https://api.minimaxi.com for the China region.
+MINIMAX_BASE_URL="https://api.minimax.io"
+
+CREATE_RESPONSE=$(curl --request POST "$MINIMAX_BASE_URL/v2/video_generation" \
+  --header "Authorization: Bearer $MINIMAX_API_KEY" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "model": "MiniMax-H3",
+    "content": [{
+      "type": "text",
+      "text": "A polished 9:16 product ad with energetic motion, a clear visual hook, and synchronized sound."
+    }],
+    "resolution": "2K",
+    "duration": 6,
+    "ratio": "9:16"
+  }')
+
+TASK_ID=$(printf '%s' "$CREATE_RESPONSE" | jq -r '.task_id')
+
+curl --request GET "$MINIMAX_BASE_URL/v2/query/video_generation/$TASK_ID" \
+  --header "Authorization: Bearer $MINIMAX_API_KEY"
+```
+
+The query response reports progress in `task.status`. Continue polling while it is `queued` or `running`; on `succeeded`, read the generated asset from `task.content.url`. Treat `failed` and `cancelled` as terminal states. Generated task records remain queryable for seven days.
+
+**Docs:** [Create a video generation task](https://platform.minimax.io/docs/api-reference/video-generation-v2-create), [query a task](https://platform.minimax.io/docs/api-reference/video-generation-v2-query)
+
+---
+
 ### Google Veo
 
 Google DeepMind's video generation model, available through the Gemini API and Vertex AI.
@@ -271,6 +321,7 @@ Full-stack video creation platform with cinematic camera controls.
 
 | Tool | Max Length | Audio | Resolution | API | Best For |
 |------|-----------|-------|------------|-----|----------|
+| **MiniMax-H3** | 15 sec | Native | 2K | Official | Short high-resolution ads |
 | **Veo 3.1** | 60 sec | Native | 1080p/4K | Gemini | Vertical social video |
 | **Kling 2.6** | 3 min | Native | 1080p | Third-party | Longer cinematic |
 | **Runway Gen-4** | 10 sec | No | 1080p | Official | Controlled, consistent |
