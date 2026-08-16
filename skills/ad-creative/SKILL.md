@@ -122,6 +122,7 @@ For image and video ad creative, use generative AI tools and code-based video re
 - **Image generation** — Nano Banana Pro (Gemini), Flux, Ideogram for static ad images
 - **Video generation** — Veo, Kling, Runway, Sora, Seedance, Higgsfield for video ads
 - **Voice & audio** — ElevenLabs, OpenAI TTS, Cartesia for voiceovers, cloning, multilingual
+- **MiniMax Speech workflow**: synthesize voiceover through the regional `/v1/t2a_v2` endpoint, with async and WebSocket delivery for long or streamed scripts
 - **Code-based video** — Remotion for templated, data-driven video at scale
 - **Platform image specs** — Correct dimensions for every ad placement
 - **Cost comparison** — Pricing for 100+ ad variations across tools
