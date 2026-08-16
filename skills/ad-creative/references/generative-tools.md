@@ -296,6 +296,58 @@ Many video generators (Veo, Kling, Sora, Seedance) now include native audio. Use
 
 ---
 
+### MiniMax Speech
+
+Bearer-authenticated text-to-speech with regional endpoints and three delivery modes: synchronous HTTP, asynchronous batch, and WebSocket streaming.
+
+**Best for:** Regional voiceover delivery, long ad scripts, streaming playback during creative review
+**API:** REST `POST /v1/t2a_v2`, async task API, WebSocket stream
+**Default model:** `speech-2.8-hd`
+**Models:** `speech-2.8-hd`, `speech-2.8-turbo`, `speech-2.6-hd`, `speech-2.6-turbo`, `speech-02-hd`, `speech-02-turbo`, `speech-01-hd`, `speech-01-turbo` — use an `-hd` variant for delivery-quality voiceover and a `-turbo` variant for fast drafts
+
+**Endpoints:**
+- Global: `https://api.minimax.io/v1/t2a_v2`
+- China: `https://api.minimaxi.com/v1/t2a_v2`
+
+**Request requirements:**
+- `model` and `text` are required
+- Optional top-level fields: `stream`, `language_boost`, `output_format`, `voice_setting`, `pronunciation_dict`, `audio_setting`, `voice_modify`, `subtitle_enable`
+- `voice_setting.voice_id` picks the voice; `speed`, `vol`, `pitch`, and `emotion` shape the read
+- `audio_setting.format` accepts `mp3`, `wav`, `flac`, or `pcm`, with `sample_rate`, `bitrate`, and `channel` for the master
+- `output_format` returns `hex` (default) or `url`; streamed responses are hex only
+
+**API example:**
+```bash
+# Use https://api.minimaxi.com for the China region.
+MINIMAX_BASE_URL="https://api.minimax.io"
+
+RESPONSE=$(curl --request POST "$MINIMAX_BASE_URL/v1/t2a_v2" \
+  --header "Authorization: Bearer $MINIMAX_API_KEY" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "model": "speech-2.8-hd",
+    "text": "Stop wasting hours on manual reporting. Try DataFlow free for 14 days.",
+    "language_boost": "English",
+    "output_format": "hex",
+    "voice_setting": {"voice_id": "your_voice_id", "speed": 1.0, "vol": 1.0, "pitch": 0},
+    "audio_setting": {"format": "mp3", "sample_rate": 32000, "bitrate": 128000, "channel": 1}
+  }')
+
+# base_resp.status_code reports 0 on success; data.audio is hex-encoded audio.
+printf '%s' "$RESPONSE" | jq -r '.data.audio' | xxd -r -p > voiceover.mp3
+```
+
+**Async batch for long scripts:**
+- `POST /v1/t2a_async_v2` with `model` and `text` (plus optional `voice_setting`, `audio_setting`, `language_boost`, `pronunciation_dict`, `voice_modify`) returns a `task_id` and a `file_id`
+- Poll `POST /v1/query/t2a_async_query_v2` with the `task_id` and read `data.status`
+- Retrieve the finished audio with the returned `file_id`
+
+**Streaming:** open a WebSocket to `wss://api.minimax.io/ws/v1/t2a_v2` (`wss://api.minimaxi.com/ws/v1/t2a_v2` for China) and send `model` and `text` to receive audio chunks while the script is still synthesizing.
+
+**Docs:** [Text to audio (HTTP)](https://platform.minimax.io/docs/api-reference/speech-t2a-http), [async task](https://platform.minimax.io/docs/api-reference/speech-t2a-async-create), [WebSocket](https://platform.minimax.io/docs/api-reference/speech-t2a-websocket)
+
+---
+
 ### ElevenLabs
 
 The market leader in realistic voice generation and voice cloning.
@@ -480,6 +532,8 @@ Need voiceover for ads?
    ffmpeg -i video.mp4 -i voiceover.mp3 -c:v copy -c:a aac output.mp4
 5. Generate variations (different scripts, voices, or languages)
 ```
+
+For step 2 with MiniMax Speech, request `output_format: "url"` when you want a hosted file to hand straight to `ffmpeg`, or hex-decode `data.audio` into a local track. Move to `/v1/t2a_async_v2` when one script is long enough that a single synchronous call is impractical, and to the WebSocket endpoint when you want to hear the read while it renders.
 
 ---
 
