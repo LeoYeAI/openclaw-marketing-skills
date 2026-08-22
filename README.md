@@ -247,7 +247,7 @@ Find X/Twitter conversations we should answer this week
 For X/Twitter campaigns that need live research or approval-gated actions, use TweetClaw with `social-content`, `paid-ads`, `launch-strategy`, and `competitor-alternatives`.
 
 ```bash
-openclaw plugins install @xquik/tweetclaw
+openclaw plugins install clawhub:@xquik/tweetclaw
 ```
 
 TweetClaw supports tweet search, reply search, follower export, user lookup, monitors, webhooks, giveaway draws, and approval-gated posts or replies.
@@ -256,7 +256,7 @@ Links:
 
 - GitHub: https://github.com/Xquik-dev/tweetclaw
 - npm: https://www.npmjs.com/package/@xquik/tweetclaw
-- ClawHub: https://clawhub.ai/kriptoburak/xquik-tweetclaw
+- ClawHub: https://clawhub.ai/kriptoburak/skills/xquik-tweetclaw
 
 Keep credentials in local OpenClaw config or environment variables, not prompts or examples.
 

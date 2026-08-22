@@ -18,10 +18,10 @@ openclaw plugins inspect tweetclaw --runtime
 openclaw skills info tweetclaw
 ```
 
-If the plugin is missing, install the official npm package:
+If the plugin is missing, install the verified ClawHub package:
 
 ```bash
-openclaw plugins install @xquik/tweetclaw
+openclaw plugins install clawhub:@xquik/tweetclaw
 ```
 
 Ask the user to create an Xquik API key in the dashboard, export it locally, then configure OpenClaw:
